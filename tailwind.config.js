@@ -5,9 +5,14 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
+				manrope: ["Manrope", "sans-serif"],
 			},
 		},
-	},
+	}/* ,
+	daisyui: {
+    themes: ["light", "dark"],
+	}, */
+	,
 	daisyui: {
     themes: [
 			{
@@ -24,9 +29,9 @@ module.exports = {
 					"accent-focus": "#edb91d",
 					"accent-content": "#f0f0f0",
 
-					/* neutral: "#707c8f",
+					neutral: "#232323",
 					"neutral-focus": "#7e899a",
-					"neutral-content": "#f0f0f0", */
+					"neutral-content": "#f0f0f0", 
 				},
 			},
 		],
