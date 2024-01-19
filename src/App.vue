@@ -1,13 +1,18 @@
 <script setup>
 
 import { RouterView, RouterLink } from 'vue-router'
-import { MoonStar } from 'lucide-vue-next';
-import { Menu } from 'lucide-vue-next';
+import { MoonStar, Sun, Menu } from 'lucide-vue-next'
+import { ref, watch } from 'vue';
+
+</script>
+
+<script>
+
+
 
 </script>
 
 <template>
-
   <!-- FOR SIDEBAR -->
 
 
@@ -31,28 +36,32 @@ import { Menu } from 'lucide-vue-next';
     </div>
   </div> -->
 
-  <div class="h-[10vh] font-manrope">
-    <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5 ">
-      <router-link :to="{ name: 'Home' }">
-        <img src="/Logo-Dark.png" width="80">
-      </router-link>
-      <ul class="pt-5 lg:pt-0 lg:flex gap-12 text-secondary font-bold">
+  <div id="container" data-theme="light">
+    <div class="h-[10vh] font-manrope">
+      <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5 ">
         <router-link :to="{ name: 'Home' }">
-          <li class="hover:text-primary lg:block hidden">home</li>
+          <img src="/Logo-Dark.png" width="80">
         </router-link>
-        <router-link :to="{ name: 'Home' }">
-          <li class="hover:text-primary lg:block hidden">about</li>
-        </router-link>
-        <router-link :to="{ name: 'Home' }">
-          <li class="hover:text-primary lg:block hidden">projects</li>
-        </router-link>
-        <MoonStar class="hover:text-primary" />
-      </ul>
+        <ul class=" flex items-center gap-5 lg:gap-12 text-secondary font-bold">
+          <router-link :to="{ name: 'Home' }">
+            <li class="hover:text-primary lg:block hidden">home</li>
+          </router-link>
+          <router-link :to="{ name: 'Home' }">
+            <li class="hover:text-primary">about</li>
+          </router-link>
+          <router-link :to="{ name: 'Home' }">
+            <li class="hover:text-primary lg:block hidden">projects</li>
+          </router-link>
+          <li>
+            <MoonStar class="hover:text-primary" />
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div>
-    <router-view class=""></router-view>
+    <div>
+      <router-view class=""></router-view>
+    </div>
   </div>
 </template>
 
