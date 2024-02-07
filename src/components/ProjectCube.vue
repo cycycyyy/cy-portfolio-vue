@@ -6,7 +6,10 @@ const { projects } = defineProps(['projects']);
 
 <template>
     <div v-for="(projects, project) in projects" :key="project" class="lg:flex gap-6 py-10">
-        <img src="https://placehold.co/720x400" class="rounded-lg" width="500">
+        <div class="max-w-[450px] max-h-[270px]">
+            <img v-if="projects.project_image !== 'null'" :src="projects.project_image" class="h-full w-full object-cover rounded-lg" :alt="projects.project_image">
+            <img v-else src="https://fl-1.cdn.flockler.com/embed/no-image.svg" class="h-full w-full object-cover rounded-lg" :alt="projects.project_image">     
+        </div>
         <div class="gap-3">
             <h2 class="text-primary font-leagueSpartan font-bold text-3xl">{{ projects.project_name }}</h2>
             <div class="flex gap-4 text-xs lg:text-sm font-semibold">
