@@ -2,14 +2,8 @@
 
 import { RouterView, RouterLink } from 'vue-router'
 import { MoonStar, Sun, Menu } from 'lucide-vue-next'
-import { ref, watch } from 'vue';
 
-</script>
-
-<script>
-
-
-
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -60,7 +54,10 @@ import { ref, watch } from 'vue';
     </div>
 
     <div>
-      <router-view class=""></router-view>
+      <router-view></router-view>
+    </div>
+    <div class="lg:flex gap-12 xl:px-48 px-10">
+      <Footer></Footer>
     </div>
   </div>
 </template>

@@ -4,11 +4,7 @@ import { Linkedin } from 'lucide-vue-next';
 import { Facebook } from 'lucide-vue-next';
 import { ArrowDown } from 'lucide-vue-next';
 
-</script>
-
-<script>
-
-import Projects from '../components/Projects.vue'    
+import Projects from '../components/Projects.vue'
 
 </script>
 
