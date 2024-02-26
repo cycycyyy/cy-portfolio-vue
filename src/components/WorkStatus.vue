@@ -2,10 +2,27 @@
 
 import { Mail, Linkedin, Facebook } from 'lucide-vue-next';
 
+const WORK_STATUS = true;
+
+const WORK_STATUS_OBJ_FALSE = [
+    {
+        status: false,
+        headline: 'Currently, I am not actively seeking employment opportunities.',
+        desc: "However, if you have a project in mind where you believe my assistance could be valuable. Don't hesitate to reach out to me through these platforms."
+    }
+]
+const WORK_STATUS_OBJ_TRUE = [
+    {
+        status: true,
+        headline: 'Currently, I am actively seeking employment opportunities!',
+        desc: "If my background aligns with your job offer, please feel free to contact me using the provided information below. Thank you."
+    }
+]
+
 </script>
 
 <template>
-    <div class="text-white bg-primary rounded-lg p-14 font-manrope mt-40 mb-11 lg:flex justify-between">
+    <div class="text-white bg-primary rounded-lg p-14 font-manrope mt-40 mb-11 lg:flex justify-between gap-5 items-center">
         <div>
             <div class="flex flex-col gap-3 lg:max-w-xl">
                 <span class="font-bold font-leagueSpartan text-[40px] leading-tight">Currently, I am not actively
@@ -26,7 +43,7 @@ import { Mail, Linkedin, Facebook } from 'lucide-vue-next';
                 </a>
             </div>
         </div>
-        <img src="../assets/ic_outline-work-off.png" width="250" class="lg:block hidden">
+        <img src="../assets/ic_outline-work-off.png" class="lg:block hidden">
     </div>
 </template>
 
