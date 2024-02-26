@@ -21,9 +21,9 @@ const { projects } = defineProps(['projects']);
             </div>
             <h2 class="font-semibold pt-3" v-if="projects.project_description !== 'null'">{{ projects.project_description }}
             </h2>
-            <div class="pt-3">
+            <!-- <div class="pt-3">
                 <button class="btn btn-sm btn-primary text-white">Check me out!</button>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

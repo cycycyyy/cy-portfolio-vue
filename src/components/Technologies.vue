@@ -25,7 +25,7 @@ const LINK_LOGO = (LOGO) => {
             <span>development</span>
             <div class="my-3 flex gap-10 items-center flex-wrap justify-center opacity-90">
                 <div v-for="(logo, index) in DEVELOPMENT_LOGOS" :key="index">
-                    <img :src="LINK_LOGO(logo)" :alt="logo">
+                    <img :src="LINK_LOGO(logo)" :alt="logo" width="60">
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ const LINK_LOGO = (LOGO) => {
             <span>designing</span>
             <div class="my-3 flex gap-10 items-center flex-wrap justify-center opacity-90">
                 <div v-for="(logo, index) in DESIGNING_LOGOS" :key="index">
-                    <img :src="LINK_LOGO(logo)" :alt="logo">
+                    <img :src="LINK_LOGO(logo)" :alt="logo" width="60">
                 </div>
             </div>
         </div>
