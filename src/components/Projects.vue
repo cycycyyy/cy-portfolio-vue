@@ -7,8 +7,6 @@ import ProjectCube from './ProjectCube.vue';
 
 const PROJECT_PORTFOLIO = ref([])
 
-
-
 onMounted(() => {
     const skeletonElement = document.getElementById('skeleton');
 
@@ -31,18 +29,18 @@ onMounted(() => {
         })
     };
 
-    setTimeout(fetchProjects, 3000);
+    setTimeout(fetchProjects, 2000);
 })
 
 </script>
 
 <template>
     <div class="py-10 font-manrope">
-        <div class="text-center">
+        <div class="text-center mb-10">
             <h2 class="text-5xl text-primary font-extrabold font-leagueSpartan"> projects</h2>
             <p class="text-accent font-semibold">these are the projects I worked on</p>
         </div>
-        <div id="skeleton">
+        <div id="skeleton" class="opacity-30">
             <!-- <div class="lg:flex gap-6 py-10">
                 <div class="skeleton w-[500px] h-[270px]"></div>
                 <div class="gap-3">

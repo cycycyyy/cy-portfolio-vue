@@ -5,12 +5,19 @@ import { Facebook } from 'lucide-vue-next';
 import { ArrowDown } from 'lucide-vue-next';
 
 import Projects from '../components/Projects.vue'
+import Technologies from '../components/Technologies.vue'
 
 </script>
 
 <template>
-    <div class="h-[90vh] flex flex-col justify-around items-center">
-        <div class="lg:flex gap-12 xl:px-48 px-10 py-8 items-center">
+    <div class="h-[90vh] flex flex-col justify-around items-center relative overflow-hidden">
+        <div class="z-0 opacity-45">
+            <img src="../assets/Green-Circle.svg" width="120" class="absolute -left-8">
+            <img src="../assets/Green-Circle.svg" width="300" class="absolute -right-44">
+            <img src="../assets/Green-Circle.svg" width="90" class="absolute">
+            <img src="../assets/Green-Circle.svg" width="150" class="absolute bottom-24 left-28">
+        </div>
+        <div class="lg:flex gap-12 xl:px-48 px-10 py-8 items-center z-10">
             <img src="/Logo-Green.png" class="pb-10 lg:pb-0" width="400">
             <div class="flex flex-col gap-2 text-secondary">
                 <p class="text-lg lg:text-xl font-bold font-manrope">Kumusta po, <span class="text-primary">I'm Jon
@@ -42,6 +49,7 @@ import Projects from '../components/Projects.vue'
 
     <div class="xl:px-48 px-10">
         <Projects />
+        <Technologies />
     </div>
 </template>
 
