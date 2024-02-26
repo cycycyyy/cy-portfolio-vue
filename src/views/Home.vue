@@ -6,6 +6,7 @@ import { ArrowDown } from 'lucide-vue-next';
 
 import Projects from '../components/Projects.vue'
 import Technologies from '../components/Technologies.vue'
+import WorkStatus from '../components/WorkStatus.vue'
 
 </script>
 
@@ -50,6 +51,7 @@ import Technologies from '../components/Technologies.vue'
     <div class="xl:px-48 px-10">
         <Projects />
         <Technologies />
+        <WorkStatus />
     </div>
 </template>
 

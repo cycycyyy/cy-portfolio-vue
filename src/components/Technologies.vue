@@ -4,7 +4,7 @@ const DEVELOPMENT_LOGOS = ['Laravel', 'Vue', 'PHP', 'JS', 'HTML', 'CSS', 'Databa
 const DESIGNING_LOGOS = ['PS', 'AI', 'Premiere', 'Figma', 'Canva']
 
 const LINK_LOGO = (LOGO) => {
-    const link = '../src/assets/tech_logos/';
+    const link = '/tech_logos/';
     const asset_link = link + LOGO + '_Logo.png';
 
     return asset_link;
