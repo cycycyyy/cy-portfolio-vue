@@ -38,18 +38,18 @@ import Footer from './components/Footer.vue'
             <img src="/Logo-Dark.png" width="80">
           </router-link>
           <ul class=" flex items-center gap-5 lg:gap-12 text-secondary font-bold">
-            <router-link :to="{ name: 'Home' }">
-              <li class="hover:text-primary lg:block hidden">home</li>
+            <!-- <router-link :to="{ name: 'Home' }">
+              <li class="hover:text-primary lg:block hidden ease-in transition-all">home</li>
             </router-link>
             <router-link :to="{ name: 'Home' }">
-              <li class="hover:text-primary">about</li>
-            </router-link>
-            <router-link :to="{ name: 'Projects' }">
-              <li class="hover:text-primary lg:block hidden">projects</li>
-            </router-link>
-            <li>
+              <li class="hover:text-primary ease-in transition-all">about</li>
+            </router-link> 
+            <router-link :to="{ name: 'Home' }">
+              <li class="hover:text-primary lg:block hidden ease-in transition-all">projects</li>
+            </router-link>-->
+            <!-- <li>
               <MoonStar class="hover:text-primary" />
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

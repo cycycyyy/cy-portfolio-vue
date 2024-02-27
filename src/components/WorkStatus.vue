@@ -38,18 +38,18 @@ const WORK_STATUS_OBJ_TRUE = [
                 <span class="font-bold text-sm lg:text-base">{{ WORK_STATUS_OBJ_FALSE[0].desc }}</span>
             </div>
             <div class="flex gap-5 text-xs mt-7 flex-wrap justify-end sm:justify-start">
-                <a href="" class="">
-                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md">
+                <a href="mailto:somerajoncyrel1@gmail.com" class="">
+                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md backdrop-blur-sm">
                         <Mail />Email
                     </div>
                 </a>
                 <a href="https://www.linkedin.com/in/somerajoncyrel/" target="_blank" class="">
-                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md">
+                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md backdrop-blur-sm">
                         <Linkedin />LinkedIn
                     </div>
                 </a>
                 <a href="https://www.facebook.com/cyguraffikusu/" target="_blank" class="">
-                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md">
+                    <div class="flex gap-2 items-center p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md backdrop-blur-sm">
                         <Facebook />Facebook
                     </div>
                 </a>
