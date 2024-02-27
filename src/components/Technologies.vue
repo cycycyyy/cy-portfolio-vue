@@ -20,12 +20,14 @@ const LINK_LOGO = (LOGO) => {
                     some)</span> and currently use</p>
         </div>
     </div>
-    <div class="lg:flex justify-between text-center font-manrope font-bold">
+    <div class="lg:flex gap-14 justify-center text-center font-manrope font-bold">
         <div class="lg:max-w-lg mb-20 lg:mb-0">
             <span>development</span>
             <div class="my-3 flex gap-10 items-center flex-wrap justify-center opacity-90">
                 <div v-for="(logo, index) in DEVELOPMENT_LOGOS" :key="index">
-                    <img :src="LINK_LOGO(logo)" :alt="logo" width="60">
+                    <div class="w-[60px] h-[60px]">
+                        <img :src="LINK_LOGO(logo)" :alt="logo" class="w-full h-full object-scale-down brightness-150 hover:brightness-200 transition-all ease-linear">
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,7 +35,9 @@ const LINK_LOGO = (LOGO) => {
             <span>designing</span>
             <div class="my-3 flex gap-10 items-center flex-wrap justify-center opacity-90">
                 <div v-for="(logo, index) in DESIGNING_LOGOS" :key="index">
-                    <img :src="LINK_LOGO(logo)" :alt="logo" width="60">
+                    <div class="w-[60px] h-[60px]">
+                        <img :src="LINK_LOGO(logo)" :alt="logo" class="w-full h-full object-scale-down brightness-150 hover:brightness-200 transition-all ease-linear">
+                    </div>
                 </div>
             </div>
         </div>

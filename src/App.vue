@@ -44,7 +44,7 @@ import Footer from './components/Footer.vue'
             <router-link :to="{ name: 'Home' }">
               <li class="hover:text-primary">about</li>
             </router-link>
-            <router-link :to="{ name: 'Home' }">
+            <router-link :to="{ name: 'Projects' }">
               <li class="hover:text-primary lg:block hidden">projects</li>
             </router-link>
             <li>

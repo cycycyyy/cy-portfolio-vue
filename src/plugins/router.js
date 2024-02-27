@@ -7,17 +7,17 @@ const routes = [
     meta: { title: "cy. | Home" },
     component: () => import("@/views/Home.vue"),
   },
-  /* {
-    path: "/About",
-    name: "About",
-    meta: { title: "cy. | About" },
-    component: () => import("@/views/About.vue"),
-  },
   {
     path: "/Projects",
     name: "Projects",
     meta: { title: "cy. | Projects" },
     component: () => import("@/views/Projects.vue"),
+  },
+  /* {
+    path: "/About",
+    name: "About",
+    meta: { title: "cy. | About" },
+    component: () => import("@/views/About.vue"),
   }, */
 ];
 
