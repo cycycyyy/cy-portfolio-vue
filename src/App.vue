@@ -43,10 +43,10 @@ import Footer from './components/Footer.vue'
             </router-link>
             <router-link :to="{ name: 'Home' }">
               <li class="hover:text-primary ease-in transition-all">about</li>
-            </router-link> 
-            <router-link :to="{ name: 'Home' }">
+            </router-link> -->
+            <router-link :to="{ name: 'Projects' }">
               <li class="hover:text-primary lg:block hidden ease-in transition-all">projects</li>
-            </router-link>-->
+            </router-link>
             <!-- <li>
               <MoonStar class="hover:text-primary" />
             </li> -->
