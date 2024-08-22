@@ -1,14 +1,15 @@
 <script setup>
+import { RouterView, RouterLink, useRouter } from "vue-router";
+import { MoonStar, Sun, Menu } from "lucide-vue-next";
 
-import { RouterView, RouterLink } from 'vue-router'
-import { MoonStar, Sun, Menu } from 'lucide-vue-next'
+import Footer from "./components/Footer.vue";
 
-import Footer from './components/Footer.vue'
+/* console.log(useRouter().currentRoute.value.name); */
+
 </script>
 
 <template>
   <!-- FOR SIDEBAR -->
-
 
   <!-- <div>
     <ul>
@@ -30,22 +31,35 @@ import Footer from './components/Footer.vue'
     </div>
   </div> -->
 
-  <div class="bg-[#f3f4f6]">
+  <div class="bg-[#f3f4f6] h-screen">
     <div id="container" class="max-w-[1920px] m-auto" data-theme="light">
       <div class="h-[10vh] font-manrope">
-        <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5 ">
+        <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5">
           <router-link :to="{ name: 'Home' }">
-            <img src="/Logo-Dark.png" width="80">
+            <img src="/Logo-Dark.png" width="80" />
           </router-link>
-          <ul class=" flex items-center gap-5 lg:gap-12 text-secondary font-bold">
+          <ul
+            class="flex items-center gap-5 lg:gap-12 text-secondary font-bold"
+          >
             <!-- <router-link :to="{ name: 'Home' }">
               <li class="hover:text-primary lg:block hidden ease-in transition-all">home</li>
             </router-link>
             <router-link :to="{ name: 'Home' }">
               <li class="hover:text-primary ease-in transition-all">about</li>
             </router-link> -->
+            <router-link :to="{ name: 'Home' }">
+              <li
+                class="hover:text-primary lg:block hidden ease-in transition-all"
+              >
+                home
+              </li>
+            </router-link>
             <router-link :to="{ name: 'Projects' }">
-              <li class="hover:text-primary lg:block hidden ease-in transition-all">projects</li>
+              <li
+                class="hover:text-primary lg:block hidden ease-in transition-all"
+              >
+                projects
+              </li>
             </router-link>
             <!-- <li>
               <MoonStar class="hover:text-primary" />

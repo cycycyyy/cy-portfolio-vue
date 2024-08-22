@@ -23,7 +23,7 @@ const WORK_STATUS_OBJ_TRUE = [
 
 <template>
     <div
-        class="text-white bg-primary rounded-lg p-8 lg:p-14 font-manrope mt-40 mb-11 flex justify-between lg:gap-5 items-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative overflow-hidden">
+        class="transition-all rounded-lg p-8 lg:p-14 font-manrope mt-40 mb-11 flex justify-between lg:gap-5 items-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] relative overflow-hidden" :class="!WORK_STATUS ? 'text-secondary bg-gray-100' : 'text-white bg-primary'">
 
         <div class="z-0">
             <img src="../assets/Logo-Dark.png" alt="" width="300" class="grayscale opacity-15 absolute bottom-4 scale-150">

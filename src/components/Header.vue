@@ -14,13 +14,13 @@ import { ArrowDown } from 'lucide-vue-next';
             <img src="../assets/Green-Circle.svg" width="150" class="absolute bottom-24 left-28">
         </div>
         <div class="lg:flex gap-12 xl:px-48 px-10 py-8 items-center z-10">
-            <img src="/Logo-Green.png" class="pb-10 lg:pb-0" width="400">
+            <img src="/Logo-Green.png" class="pb-10 lg:pb-0 drop-shadow-xl" width="400">
             <div class="flex flex-col gap-2 text-secondary">
                 <p class="text-lg lg:text-xl font-bold font-manrope">Kumusta po, <span class="text-primary">I'm Jon
                         Cyrel.</span></p>
-                <h1 class="text-4xl lg:text-5xl font-extrabold font-leagueSpartan">A <span class="text-primary">Graphic
-                        Sensei,</span> mastering the art of <span class="text-primary">product design,</span> and <span
-                        class="text-primary">branding harmony.</span></h1>
+                <h1 class="text-4xl lg:text-5xl font-extrabold font-leagueSpartan">A <span class="text-primary drop-shadow-lg">Graphic
+                        Sensei,</span> mastering the art of <span class="text-primary drop-shadow-lg">product design,</span> and <span
+                        class="text-primary drop-shadow-lg">branding harmony.</span></h1>
                 <div class="flex gap-4 text-primary pt-4 items-center">
                     <a href="https://www.linkedin.com/in/somerajoncyrel/" target="_blank">
                         <Linkedin />

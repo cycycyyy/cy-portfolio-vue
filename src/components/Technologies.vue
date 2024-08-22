@@ -15,7 +15,7 @@ const LINK_LOGO = (LOGO) => {
 <template>
     <div class="py-10 font-manrope">
         <div class="text-center mb-10">
-            <h2 class="text-5xl text-primary font-extrabold font-leagueSpartan"> technologies</h2>
+            <h2 class="text-5xl text-primary font-extrabold font-leagueSpartan drop-shadow-lg"> technologies</h2>
             <p class="text-accent font-semibold">These are the tech I learned <span class="text-primary">(I still learn
                     some)</span> and currently use</p>
         </div>
