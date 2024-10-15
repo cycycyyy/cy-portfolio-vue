@@ -80,7 +80,7 @@ onMounted(async () => {
     </div>
 
     <div class="xl:px-48 px-10" v-if="!isLoading">
-      <ProjectCube :projects="PROJECT_PORTFOLIO" :showAll="true" />
+      <ProjectCube :projects="PROJECT_PORTFOLIO" :showAll="true"/>
     </div>
   </div>
 </template>

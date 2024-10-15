@@ -1,6 +1,5 @@
 <script setup>
-import { RouterView, RouterLink, useRouter } from "vue-router";
-import { MoonStar, Sun, Menu } from "lucide-vue-next";
+import { RouterView, RouterLink } from "vue-router";
 
 import Footer from "./components/Footer.vue";
 
@@ -34,7 +33,7 @@ import Footer from "./components/Footer.vue";
   <div class="bg-[#f3f4f6] h-screen">
     <div id="container" class="max-w-[1920px] m-auto" data-theme="light">
       <div class="h-[10vh] font-manrope">
-        <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5">
+        <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5" v-motion-fade-visible-once>
           <router-link :to="{ name: 'Home' }">
             <img src="/Logo-Dark.png" width="80" />
           </router-link>
@@ -71,7 +70,7 @@ import Footer from "./components/Footer.vue";
       <div>
         <router-view></router-view>
       </div>
-      <div class="lg:flex gap-12 xl:px-48 px-10">
+      <div class="lg:flex gap-12 xl:px-48 px-10" v-motion-fade-visible-once>
         <Footer></Footer>
       </div>
     </div>

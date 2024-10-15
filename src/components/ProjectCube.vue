@@ -26,6 +26,7 @@ const props = defineProps<{
         : projects.slice(0, 3)"
       :key="index"
       class="lg:flex gap-8 py-5 max-w-[1000px]"
+      v-motion-pop-visible
     >
       <div
         class="lg:max-w-[450px] lg:max-h-[270px] mb-4 grayscale hover:grayscale-0 transition-all ease-in delay-150"

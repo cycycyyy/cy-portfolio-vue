@@ -8,9 +8,9 @@ import Header from '../components/Header.vue'
 </script>
 
 <template>
-    <Header />
+    <Header v-motion-fade-visible-once/>
     <div class="xl:px-48 px-10">
-        <Projects />
+        <Projects  v-motion-roll-visible-once-left/>
         <Technologies />
         <WorkStatus />
     </div>
