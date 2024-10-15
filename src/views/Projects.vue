@@ -58,7 +58,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center font-manrope">
     <div class="text-center mb-10">
       <h2
         class="text-5xl text-primary font-extrabold font-leagueSpartan drop-shadow-lg"
