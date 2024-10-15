@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ExternalLink } from "lucide-vue-next";
+import { ExternalLink, Laptop } from "lucide-vue-next";
 
 type Project = {
   id: string;
@@ -21,7 +21,9 @@ const props = defineProps<{
 <template>
   <div class="flex flex-col">
     <div
-      v-for="(project, index) in props.showAll ? projects : projects.slice(0, 3)"
+      v-for="(project, index) in props.showAll
+        ? projects
+        : projects.slice(0, 3)"
       :key="index"
       class="lg:flex gap-8 py-5 max-w-[1000px]"
     >
@@ -45,13 +47,16 @@ const props = defineProps<{
         <h2 class="text-primary font-leagueSpartan font-bold text-3xl">
           {{ project.project_name }}
         </h2>
-        <div class="flex gap-4 text-xs lg:text-sm">
-          <p
-            v-for="(project_tech, index) in project.project_techs"
-            :key="index"
-          >
-            {{ project_tech }}
-          </p>
+        <div class="flex items-center gap-2">
+          <Laptop class="text-secondary size-5"/> <!-- <span class="text-xs font-bold text-secondary">Techs used:</span> -->
+          <div class="flex gap-3 text-xs lg:text-sm items-center font-semibold text-secondary font-manrope">
+            <p
+              v-for="(project_tech, index) in project.project_techs"
+              :key="index"
+            >
+              {{ project_tech }}
+            </p>
+          </div>
         </div>
         <h2
           class="font-semibold pt-3 lg:max-w-[40vw]"

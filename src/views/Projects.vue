@@ -31,6 +31,12 @@ const fetchProjects = async (): Promise<void> => {
           project_date: doc.data().project_date,
           project_link: doc.data().project_link,
         }));
+
+        // Sort projects by project_date in descending order
+        projects.sort((a, b) => {
+          return b.project_date.toDate().getTime() - a.project_date.toDate().getTime();
+        });
+
         resolve(projects);
       },
       reject
@@ -40,10 +46,11 @@ const fetchProjects = async (): Promise<void> => {
   PROJECT_PORTFOLIO.value = snapshot;
 };
 
+
 onMounted(async () => {
   console.log("Data fetching");
   isLoading.value = true;
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  //await new Promise((resolve) => setTimeout(resolve, 2000));
   await fetchProjects();
   console.log("Data fetched");
   isLoading.value = false;

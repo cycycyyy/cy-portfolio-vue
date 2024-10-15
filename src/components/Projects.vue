@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeMount } from "vue";
+import { ref, onMounted } from "vue";
 import { db } from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
 import ProjectCube from "./ProjectCube.vue";
+import { RouterLink, useRouter } from "vue-router";
 
 interface Project {
   id: string;
@@ -31,6 +32,12 @@ const fetchProjects = async (): Promise<void> => {
           project_date: doc.data().project_date,
           project_link: doc.data().project_link,
         }));
+
+        // Sort projects by project_date in descending order
+        projects.sort((a, b) => {
+          return b.project_date.toDate().getTime() - a.project_date.toDate().getTime();
+        });
+
         resolve(projects);
       },
       reject
@@ -43,7 +50,7 @@ const fetchProjects = async (): Promise<void> => {
 onMounted(async () => {
   console.log("Data fetching");
   isLoading.value = true;
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  //await new Promise((resolve) => setTimeout(resolve, 2000));
   await fetchProjects();
   console.log("Data fetched");
   isLoading.value = false;
@@ -69,7 +76,20 @@ onMounted(async () => {
       </div>
     </div>
 
-    <ProjectCube :projects="PROJECT_PORTFOLIO" :showAll="false" v-if="!isLoading"/>
+    <ProjectCube
+      :projects="PROJECT_PORTFOLIO"
+      :showAll="false"
+      v-if="!isLoading"
+    />
+    <router-link :to="{ name: 'Projects' }">
+      <button
+        class="btn btn-sm btn-secondary text-white flex items-center gap-1"
+        @click="useRouter().push('/Projects')"
+        v-if="!isLoading"
+      >
+        View All Projects
+      </button>
+    </router-link>
   </div>
 </template>
 
