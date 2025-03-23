@@ -124,17 +124,17 @@ const show = (collection: string) => {
   if (collection === "screens") {
     viewerApi({
       images: [
-        "/src/assets/kapedoko/Kapedoko-Collage.jpg",
-        "/src/assets/kapedoko/screens/1.png",
-        "/src/assets/kapedoko/screens/2.png",
-        "/src/assets/kapedoko/screens/3.png",
-        "/src/assets/kapedoko/screens/4.png",
-        "/src/assets/kapedoko/screens/5.png",
-        "/src/assets/kapedoko/screens/6.png",
-        "/src/assets/kapedoko/screens/7.png",
-        "/src/assets/kapedoko/screens/8.png",
-        "/src/assets/kapedoko/screens/9.png",
-        "/src/assets/kapedoko/screens/10.png",
+        "/kapedoko/Kapedoko-Collage.jpg",
+        "/kapedoko/screens/1.png",
+        "/kapedoko/screens/2.png",
+        "/kapedoko/screens/3.png",
+        "/kapedoko/screens/4.png",
+        "/kapedoko/screens/5.png",
+        "/kapedoko/screens/6.png",
+        "/kapedoko/screens/7.png",
+        "/kapedoko/screens/8.png",
+        "/kapedoko/screens/9.png",
+        "/kapedoko/screens/10.png",
       ],
     });
   } else {

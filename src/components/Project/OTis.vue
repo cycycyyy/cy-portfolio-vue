@@ -67,11 +67,11 @@ const redirectTo = (url: string) => {
 const show = (collection: string) => {
   if (collection === "screens") {
     viewerApi({
-      images: ["/src/assets/otis-manila/OTisManila-Screens.png"],
+      images: ["/otis-manila/OTisManila-Screens.png"],
     });
   } else {
     viewerApi({
-      images: ["/src/assets/otis-manila/BrandGuide-OTisManila.jpg"],
+      images: ["/otis-manila/BrandGuide-OTisManila.jpg"],
     });
   }
 };
