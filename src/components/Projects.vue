@@ -67,7 +67,7 @@ onMounted(async () => {
         these are the projects I worked on
       </p>
     </div>
-    <div id="skeleton" class="opacity-30 xl:px-48 px-10" v-if="isLoading">
+    <div id="skeleton" class="opacity-30 xl:px-48 px-5" v-if="isLoading">
       <div class="flex flex-col gap-14 flex-wrap justify-center">
         <div
           v-for="_ in 4"
