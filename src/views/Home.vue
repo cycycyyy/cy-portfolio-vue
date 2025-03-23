@@ -27,7 +27,7 @@ import Header from "../components/Header.vue";
     <ProjectOTis />
     <ProjectCinenest />
   </div>
-  <div class="xl:px-48 px-5 py-14">
+  <div class="xl:px-48 px-5 py-10">
     <!-- <Projects  v-motion-roll-visible-once-left/> -->
     <Technologies/>
     <WorkStatus />

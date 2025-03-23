@@ -4,6 +4,12 @@
   >
     <div class="lg:flex items-center justify-between xl:px-48 space-y-5 gap-10">
       <div class="flex flex-col items-start relative gap-10 lg:w-1/2">
+        <div class="h-[25px] ">
+          <img
+            src="/src/assets/cinenest/Cinenest-Logo.png"
+            class="w-full h-full object-contain"
+          />
+        </div>
         <div class="space-y-3 flex-1">
           <div>
             <span
@@ -22,14 +28,14 @@
           </div>
           <div class="drop-shadow-lg space-y-2">
             <p>
-              Uses the TMDB API to provide users with
-              up-to-date information on the latest movie releases. Built with
-              Nuxt 3, Nuxt UI, and Vue Motion.
+              Uses the TMDB API to provide users with up-to-date information on
+              the latest movie releases. Built with Nuxt 3, Nuxt UI, and Vue
+              Motion.
             </p>
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="lg:flex hidden">
         <div class="h-[50vh]" v-motion-slide-visible-bottom>
           <img
             src="/src/assets/cinenest/Cinenest-Mockup.png"
