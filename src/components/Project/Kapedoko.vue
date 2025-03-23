@@ -139,7 +139,7 @@ const show = (collection: string) => {
     });
   } else {
     viewerApi({
-      images: ["/src/assets/kapedoko/Kapedoko-BrandGuide.jpg"],
+      images: ["/kapedoko/Kapedoko-BrandGuide.jpg"],
     });
   }
 };
