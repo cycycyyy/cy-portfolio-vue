@@ -70,7 +70,7 @@ onMounted(async () => {
       </p>
     </div>
 
-    <div id="skeleton" class="opacity-30 xl:px-48 px-10" v-if="isLoading">
+    <div id="skeleton" class="opacity-30 xl:px-48 px-5" v-if="isLoading">
       <div class="flex flex-col gap-14 flex-wrap justify-center">
         <div
           v-for="_ in 4"
@@ -79,7 +79,7 @@ onMounted(async () => {
       </div>
     </div>
 
-    <div class="xl:px-48 px-10" v-if="!isLoading">
+    <div class="xl:px-48 px-5" v-if="!isLoading">
       <ProjectCube :projects="PROJECT_PORTFOLIO" :showAll="true"/>
     </div>
   </div>

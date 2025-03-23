@@ -28,12 +28,12 @@ import Footer from "./components/Footer.vue";
         <li><a>Sidebar Item 2</a></li>
       </ul>
     </div>
-  </div> -->
+  </div>max-w-[1920px]  -->
 
   <div class="bg-[#f3f4f6] h-screen">
-    <div id="container" class="max-w-[1920px] m-auto" data-theme="light">
+    <div id="container" class="bg-[#f3f4f6] m-auto" data-theme="light">
       <div class="h-[10vh] font-manrope">
-        <div class="flex justify-between lg:items-center xl:px-48 px-10 py-5" v-motion-fade-visible-once>
+        <div class="flex justify-between lg:items-center xl:px-48 px-5 py-5" v-motion-fade-visible-once>
           <router-link :to="{ name: 'Home' }">
             <img src="/Logo-Dark.png" width="80" />
           </router-link>
@@ -46,7 +46,7 @@ import Footer from "./components/Footer.vue";
             <router-link :to="{ name: 'Home' }">
               <li class="hover:text-primary ease-in transition-all">about</li>
             </router-link> -->
-            <router-link :to="{ name: 'Home' }">
+            <!-- <router-link :to="{ name: 'Home' }">
               <li
                 class="hover:text-primary lg:block hidden ease-in transition-all"
               >
@@ -59,7 +59,7 @@ import Footer from "./components/Footer.vue";
               >
                 projects
               </li>
-            </router-link>
+            </router-link> -->
             <!-- <li>
               <MoonStar class="hover:text-primary" />
             </li> -->
@@ -70,7 +70,7 @@ import Footer from "./components/Footer.vue";
       <div>
         <router-view></router-view>
       </div>
-      <div class="lg:flex gap-12 xl:px-48 px-10" v-motion-fade-visible-once>
+      <div class="lg:flex gap-12 xl:px-48 px-5" v-motion-fade-visible-once>
         <Footer></Footer>
       </div>
     </div>

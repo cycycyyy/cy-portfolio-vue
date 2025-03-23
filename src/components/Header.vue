@@ -13,7 +13,7 @@ import { ArrowDown } from 'lucide-vue-next';
             <img src="../assets/Green-Circle.svg" width="90" class="absolute">
             <img src="../assets/Green-Circle.svg" width="150" class="absolute bottom-24 left-28">
         </div>
-        <div class="lg:flex gap-12 xl:px-48 px-10 py-8 items-center z-10">
+        <div class="lg:flex gap-12 xl:px-48 px-5 py-8 items-center z-10">
             <img src="/Logo-Green.png" class="pb-10 lg:pb-0 drop-shadow-xl" width="400">
             <div class="flex flex-col gap-2 text-secondary">
                 <p class="text-lg lg:text-xl font-bold font-manrope">Kumusta po, <span class="text-primary">I'm Jon
@@ -31,9 +31,6 @@ import { ArrowDown } from 'lucide-vue-next';
                     <a href="https://www.facebook.com/cyguraffikusu/" target="_blank">
                         <Facebook />
                     </a>
-                    <!-- <a href="" class="btn btn-primary btn-sm text-base-100">
-                        projects
-                    </a> -->
                 </div>
             </div>
         </div>
